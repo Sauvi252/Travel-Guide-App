@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.travelguideapp.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_LoginFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_StateGridFragment"
+            app:destination="@id/StateGridFragment"
+            app:popUpTo="@id/LoginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StateGridFragment"
+        android:name="com.example.travelguideapp.StateGridFragment"
+        android:label="States"
+        tools:layout="@layout/fragment_state_grid">
+        <action
+            android:id="@+id/action_StateGridFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_StateGridFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.travelguideapp.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_RegisterFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment"
+            app:popUpTo="@id/LoginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.travelguideapp.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.travelguideapp.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_ProfileFragment_to_TripPlannerFragment"
+            app:destination="@id/TripPlannerFragment" />
+        <action
+            android:id="@+id/action_ProfileFragment_to_ExpenseTrackerFragment"
+            app:destination="@id/ExpenseTrackerFragment" />
+        <action
+            android:id="@+id/action_ProfileFragment_to_DigitalPassportFragment"
+            app:destination="@id/DigitalPassportFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DigitalPassportFragment"
+        android:name="com.example.travelguideapp.DigitalPassportFragment"
+        android:label="Digital Passport"
+        tools:layout="@layout/fragment_digital_passport" />
+
+    <fragment
+        android:id="@+id/TripPlannerFragment"
+        android:name="com.example.travelguideapp.TripPlannerFragment"
+        android:label="Trip Planner"
+        tools:layout="@layout/fragment_trip_planner" />
+
+    <fragment
+        android:id="@+id/ARGuideFragment"
+        android:name="com.example.travelguideapp.ARGuideFragment"
+        android:label="AR Explorer"
+        tools:layout="@layout/fragment_ar_guide" />
+
+    <fragment
+        android:id="@+id/ExpenseTrackerFragment"
+        android:name="com.example.travelguideapp.ExpenseTrackerFragment"
+        android:label="Expense Tracker"
+        tools:layout="@layout/fragment_expense_tracker" />
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.travelguideapp.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_BuddyFragment"
+            app:destination="@id/BuddyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BuddyFragment"
+        android:name="com.example.travelguideapp.BuddyFragment"
+        android:label="Travel Buddies"
+        tools:layout="@layout/fragment_buddy" />
+
+</navigation>
