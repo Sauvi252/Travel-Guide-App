@@ -304,7 +304,7 @@ Copyright (c) 2026 Saurav Kumar
 **Saurav Kumar**
 
 - 📧 Email: [sauravkumart927@gmail.com](mailto:sauravkumart927@gmail.com)
-- 🐙 GitHub: [@SauravKumar](https://github.com/SauravKumar)
+- 🐙 GitHub: [@SauravKumar](https://github.com/Sauvi252)
 
 ---
 
