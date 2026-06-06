@@ -260,7 +260,13 @@ The app requires the following permissions:
 | `android.hardware.camera.ar` | ARCore landmark detection |
 
 ---
+---
+## 🤝 Screenshort
+<img width="1912" height="1072" alt="image" src="https://github.com/user-attachments/assets/b11fa4fc-7e41-49d5-924b-7b855867d993" />
+<img width="399" height="803" alt="image" src="https://github.com/user-attachments/assets/f5cc713f-79a4-4346-a8a2-f1a68f053125" />
+<img width="407" height="876" alt="image" src="https://github.com/user-attachments/assets/31c38a23-37fb-4c8a-ab05-2dbc2684234b" />
 
+---
 ## 🔮 Planned Features (Roadmap)
 
 - [ ] Real Firebase Authentication (email/password + Google Sign-In)
